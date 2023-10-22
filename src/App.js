@@ -1,25 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import LoginPage from './loginpage.jsx'
+import {Button, Checkbox, Form, Input } from 'antd'
+import LoginSignup from './Components/LoginSignupPage/LoginSignupPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+const onFinish = (values) => {
+  console.log('Success:', values);
+};
+const onFinishFailed = (errorInfo) => {
+  console.log('Failed:', errorInfo);
+};
+const App = () => (
+  <LoginSignup/>
+);
 export default App;

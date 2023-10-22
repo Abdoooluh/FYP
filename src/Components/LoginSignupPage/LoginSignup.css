@@ -1,0 +1,17 @@
+.Container {
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   margin:5%;
+   align-items: center;
+   width: max-content;
+   height: max-content;
+}
+.window {
+   width: auto;
+   height: auto;
+}
+
+.Header {
+   display: flex;
+}
