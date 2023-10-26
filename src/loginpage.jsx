@@ -6,36 +6,44 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1b1b1b; // Darker background color
+    background: linear-gradient(45deg, #121212, #1b1b1b);
 `;
 
 const LoginForm = styled.div`
     background-color: #2c2c2c;
-    width: 450px; // Adjusted width to match the second image
+    width: 450px;
     padding: 40px 60px; 
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    align-items: flex-start; // Align to the start to match the second image
+    align-items: flex-start;
+`;
+
+const Title = styled.h1`
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
 `;
 
 const Label = styled.label`
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
-    color: #aaa; // Adjusted the color to a lighter gray
+    color: #ccc;
 `;
 
 const Input = styled.input`
     width: 100%;
     max-width: 400px;
-    padding: 12px 16px; 
-    margin-bottom: 15px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
     border: 1px solid #555;
-    border-radius: 6px;
+    border-radius: 8px;
     background-color: #3c3c3c;
     color: #ddd;
+    font-family: 'Arial', sans-serif;
     &:focus {
         outline: none;
         border-color: #0078d7;
@@ -45,20 +53,21 @@ const Input = styled.input`
 const Button = styled.button`
     background-color: #0078d7;
     border: none;
-    border-radius: 4px;
-    padding: 12px 16px;
+    border-radius: 6px;
+    padding: 14px 18px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
     &:hover {
-        background-color: #005cb2; // Slightly darker shade on hover
+        background-color: #005cb2;
     }
 `;
 
 const RememberMe = styled.div`
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 `;
 
 const Checkbox = styled.input`
@@ -68,26 +77,27 @@ const Checkbox = styled.input`
 const HelpLink = styled.a`
     color: #0078d7;
     text-decoration: none;
+    font-size: 14px;
     &:hover {
         text-decoration: underline;
     }
 `;
 
-
 const LoginPage = () => {
     return (
         <Container>
             <LoginForm>
-                <Label>SIGN IN WITH ACCOUNT NAME</Label>
-                <Input type="text" placeholder="Sign in with account name" />
-                <Label>PASSWORD</Label>
-                <Input type="password" placeholder="Password" />
+                <Title>Log In</Title>
+                <Label>Username</Label>
+                <Input type="text" placeholder="Enter your Username" />
+                <Label>Password</Label>
+                <Input type="password" placeholder="Enter your Password" />
                 <RememberMe>
                     <Checkbox type="checkbox" />
-                    Remember me
+                    Remember Me
                 </RememberMe>
-                <Button>Sign in</Button>
-                <HelpLink>Help, I can't sign in</HelpLink>
+                <Button>Log In</Button>
+                <HelpLink>Forgot Password?</HelpLink>
             </LoginForm>
         </Container>
     );

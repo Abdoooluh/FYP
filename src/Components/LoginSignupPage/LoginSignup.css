@@ -1,17 +1,85 @@
-.Container {
-   display: flex;
-   flex-direction: column;
-   position: absolute;
-   margin:5%;
-   align-items: center;
-   width: max-content;
-   height: max-content;
-}
+ /************************************* */
+ /* Global styling for the window */
 .window {
-   width: auto;
-   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #F7F9FC;
 }
 
-.Header {
-   display: flex;
+/* Container to hold the form */
+.Container {
+   width: 400px;
+   background-color: #FFFFFF;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   padding: 30px;
 }
+
+/* Header section for title and underline */
+.Header {
+   margin-bottom: 20px;
+}
+
+.Text h1 {
+   margin: 0;
+   color: #333;
+   font-weight: 500;
+}
+
+.Underline {
+   width: 50px;
+   height: 3px;
+   background-color: #333;
+   margin-top: 5px;
+}
+
+/* Content section for the inputs and buttons */
+.Content {
+   margin-top: 30px;
+}
+
+.Input {
+   margin-bottom: 15px;
+}
+
+.Input .ant-input {
+   border-radius: 5px;
+}
+
+.Input .ant-input-addon-before {
+   border-radius: 5px 0 0 5px;
+   background-color: #F7F9FC;
+}
+
+/* Checkbox styling */
+.Content .ant-checkbox-wrapper {
+   margin-bottom: 20px;
+}
+
+/* Button styling */
+.Submit {
+   width: 100%;
+   margin-bottom: 15px;
+   background-color: #333;
+   border: none;
+   border-radius: 5px;
+   color: white;
+}
+
+.Submit.grayed {
+   background-color: #CCC;
+}
+
+.Submit:hover {
+   background-color: #555;
+}
+
+.Submit.grayed:hover {
+   background-color: #DDD;
+}
+
+ 
+ 
+ 

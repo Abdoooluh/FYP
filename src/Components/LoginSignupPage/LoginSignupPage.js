@@ -55,8 +55,8 @@ const LoginSignup = () => {
                         <div className="Input">
                            <Input
                               placeholder="Enter your Username"
-                              addonBefore=<UserOutlined />
-                              onchange={(e) => setLoginUser(e.target.value)}
+                              addonBefore={<UserOutlined />}
+                              onChange={(e) => setLoginUser(e.target.value)}
                               type="text"
                               maxLength={12}
                            />
@@ -65,7 +65,7 @@ const LoginSignup = () => {
                            <Input
                               placeholder="Enter your Password"
                               addonBefore=<LockOutlined />
-                              onchange={(e) => setLoginPass(e.target.value)}
+                              onChange={(e) => setLoginPass(e.target.value)}
                               type="password"
                               maxLength={15}
                            />
@@ -88,8 +88,8 @@ const LoginSignup = () => {
                         <div className="Input">
                            <Input
                               placeholder="Enter your Email"
-                              addonBefore=<MailOutlined />
-                              onchange={(e) => setSignupMail(e.target.value)}
+                              addonBefore={<MailOutlined />}
+                              onChange={(e) => setSignupMail(e.target.value)}
                               type="email"
                               maxLength={12}
                            />
@@ -98,7 +98,7 @@ const LoginSignup = () => {
                            <Input
                               placeholder="Enter your Username"
                               addonBefore=<UserOutlined />
-                              onchange={(e) => setSignupUser(e.target.value)}
+                              onChange={(e) => setSignupUser(e.target.value)}
                               type="text"
                               maxLength={12}
                            />
@@ -106,8 +106,8 @@ const LoginSignup = () => {
                         <div className="Input">
                            <Input
                               placeholder="Enter your Password"
-                              addonBefore=<LockOutlined />
-                              onchange={(e) => setSignupPass(e.target.value)}
+                              addonBefore={<LockOutlined />}
+                              onChange={(e) => setSignupPass(e.target.value)}
                               type="password"
                               maxLength={15}
                            />
